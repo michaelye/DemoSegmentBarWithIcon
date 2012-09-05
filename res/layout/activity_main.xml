@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/title_btn_back_selector"
+            android:text="@string/workbench_home_page"
+            android:textColor="@color/title_button_color_gray" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/title_btn_rect_selector"
+            android:text="@string/workbench_add_task"
+            android:textColor="@color/title_button_color_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/workbench_title"
+            android:textColor="@color/title_color_white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <com.michael.widget.SegmentBar
+        android:id="@+id/ll_segment_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title" />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/title_color_white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

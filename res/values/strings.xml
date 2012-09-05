@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">DemoSegmentBarWithIcon</string>
+    
+    <string name="workbench_title">我执行的任务</string>
+    <string name="workbench_home_page">首  页</string>
+    <string name="workbench_add_task">新增任务</string>
+</resources>
